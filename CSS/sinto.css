@@ -1,0 +1,116 @@
+/* Computer */
+/* Component */
+html{
+    font-family: 'Noto Sans TC', sans-serif;
+    /* font-family: 'Monoton', cursive; */
+  }
+  
+  
+  /* Section */
+  /* Picture Buttons */
+  .box{
+      border: 1px solid red;
+      width: 960px;
+      height: 650px;
+  }
+  /* Footer */
+  /* Switch */
+  .btn-toggle {
+      margin: 0 4rem;
+      padding: 0;
+      position: relative;
+      border: none;
+      height: 1.5rem;
+      width: 3rem;
+      border-radius: 1.5rem;
+      color: #6b7381;
+      background: #bdc1c8;
+      box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+    }
+    .btn-toggle:focus,
+    .btn-toggle.focus,
+    .btn-toggle:focus.active,
+    .btn-toggle.focus.active {
+      outline: none;
+    }
+    .btn-toggle:before,
+    .btn-toggle:after {
+      line-height: 1.5rem;
+      width: 4rem;
+      text-align: center;
+      font-weight: 600;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      position: absolute;
+      bottom: 0;
+      transition: opacity 0.25s;
+    }
+    .btn-toggle:before,
+    .btn-toggle:after {
+      color: red;
+    }
+    .btn-toggle,
+    .btn-toggle.active {
+      background-color: #826C9E;
+    }
+    .btn-toggle.btn-switch {
+      margin: 0 5rem;
+      padding: 0;
+      position: relative;
+      border: none;
+      height: 2.5rem;
+      width: 5rem;
+      border-radius: 2.5rem;
+    }
+    .btn-toggle.btn-switch:focus,
+    .btn-toggle.btn-switch.focus,
+    .btn-toggle.btn-switch:focus.active,
+    .btn-toggle.btn-switch.focus.active {
+      outline: none;
+    }
+    .btn-switch:before,
+    .btn-toggle.btn-switch:after {
+      line-height: 2.5rem;
+      width: 5rem;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      position: absolute;
+      bottom: 0;
+      transition: opacity 0.25s;
+    }
+    .btn-switch:before {
+      content: 'CN';
+      left: -5rem;
+    }
+    .btn-switch:after {
+      content: 'EN';
+      right: -5rem;
+      opacity: 0.5;
+    }
+    .btn-switch > .handle {
+      position: absolute;
+      top: 0.3125rem;
+      left: 0.3125rem;
+      width: 1.875rem;
+      height: 1.875rem;
+      border-radius: 1.875rem;
+      background: #B6D58D;
+      transition: left 0.25s;
+    }
+    .btn-switch.active {
+      transition: background-color 0.25s;
+    }
+    .btn-switch.active > .handle {
+      left: 2.8125rem;
+      transition: left 0.25s;
+    }
+    .btn-switch.active:before {
+      opacity: 0.5;
+    }
+    .btn-switch.active:after {
+      opacity: 1;
+    }
