@@ -1,13 +1,24 @@
 /* Computer */
 /* Component */
 html{
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'Noto Sans TC', sans-serif!important;
   /* font-family: 'Monoton', cursive; */
   width: 100%;
 }
 
 h1{
   font-size: 3rem!important;
+}
+
+h2{
+  font-size: 2.5rem!important;
+}
+
+p{
+  font-size: 1rem;
+  font-family: 'Noto Sans TC', sans-serif!important;
+  font-weight: bold;
+  color: #333333;
 }
 
 .container-fluid{
@@ -50,6 +61,7 @@ h1{
 
 .nav-item{
   border-bottom: 3px solid transparent;
+  transition-duration: .5s;
 }
 
 .nav-item:hover{
@@ -75,24 +87,6 @@ h1{
 
 /* Header */
 /* Hero */
-/* .banner{
-  width: 100%;
-  height: 50rem; 
-  overflow: hidden;
-  position: absolute;
-  background-image: url(/images/banner01.jpg) no-repeat;
-  background-size: contain;
-}
-
-.banner01{
-  position: relative;
-  width: 150%;
-  width: 150vw;
-  height: 100%;
-  left: -30rem;
-  top: -4rem;
-  background-size: contain;
-} */
 .banner{
   width: 100%;
   height: 670px;
@@ -126,7 +120,7 @@ h1{
 
 }
 
-/* Switch */
+/* Switch按鈕 ↓↓↓ */
 .btn{
   padding: 0;
   margin-top: 2rem;
@@ -145,6 +139,7 @@ h1{
   background: #bdc1c8;
   box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
 }
+
 .btn-toggle:focus,
 .btn-toggle.focus,
 .btn-toggle:focus.active,
@@ -166,7 +161,7 @@ h1{
 }
 .btn-toggle:before,
 .btn-toggle:after {
-  color: red;
+  color: #826ca0;
 }
 .btn-toggle,
 .btn-toggle.active {
@@ -232,6 +227,7 @@ h1{
 .btn-switch.active:after {
   opacity: 1;
 }
+/* Switch按鈕↑↑↑ */
 
 /* Section */
 /* about */
@@ -243,17 +239,123 @@ h1{
 .about{
   position: absolute;
   top: 730px;
-  border: 1px solid red;
+  width: 100%;
+  height: 780px;
+  background: url(/images/banner03.jpg) center center;
+  background-attachment: fixed;
 }
 
+.about_brand{
+  width: 80px;
+  height: auto;
+  margin: 3rem auto 1.5rem;
+}
+
+.about_brand img{
+  width: 100%;
+}
+
+.about_sinto{
+  text-align: center;
+  width: 100%;
+  margin: 3rem auto;
+}
+
+/* about_sinto下的h2 */
+.about_sinto h2{
+    color: #00a29a;
+    margin: 0 auto;
+}
+
+/* about_sinto 水平線↓↓↓ */
+.about_sinto h2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.about_sinto h2:before,
+.about_sinto h2:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 3px solid #00a29a;;
+  margin: auto 1.5rem;
+}
+/* about_sinto 水平線↑↑↑ */
+			
+.about_inner{
+  margin: 0 auto;
+}
+
+/* 了解更多按鈕↓↓↓ */
+.btn_more{
+  width: 300px;
+  /* height: 85px; */
+  border: solid 3px #016eb6;
+  margin: 2rem auto ;
+  font-size: 1.2rem;
+  border-radius: 3px;
+  background-color: #ffffff;
+  transition-duration: .5s;
+}
+
+.btn_more:hover{
+  background-color: #016eb6;
+}
+
+.btn_more:hover .btn_p{
+  color: #ffffff;
+}
+
+.btn_p{
+  margin: 24px 100px;
+  color: #016eb6;
+}
+/* 了解更多按鈕↑↑↑ */
 
 /* Section */
-/* Picture Buttons */
-.box{
-    border: 1px solid red;
-    width: 960px;
-    height: 650px;
+/* Download Picture Buttons */
+/* pic_btns區域 對位↓↓↓ */
+.about{
+  position: relative;
 }
+
+.pic_btns{
+  position: absolute;
+  top: 1550px;
+  width: 100%;
+}
+
+.about{
+  position: absolute;
+  top: 730px;
+  width: 100%;
+  height: 780px;
+  background: url(/images/banner03.jpg) center center;
+  background-attachment: fixed;
+}
+/* 對位↑↑↑ */
+
+/* 圖片按鈕 ↓↓↓ */
+.box{
+  border: 2px solid #ffffff;
+  width: 960px;
+  height: 650px;
+}
+
+.box:first-child{
+  background: url(/images/pic01.jpg);
+}
+
+.box:last-child{
+  background: url(/images/pic02.jpg);
+}
+/* 圖片按鈕 ↑↑↑ */
+
+.tagbox img{
+  /* vertical-align: bottom; */
+} 
+
+
 
 /* Footer */
 
