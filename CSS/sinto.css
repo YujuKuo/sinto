@@ -1,116 +1,288 @@
 /* Computer */
 /* Component */
 html{
-    font-family: 'Noto Sans TC', sans-serif;
-    /* font-family: 'Monoton', cursive; */
+  font-family: 'Noto Sans TC', sans-serif;
+  /* font-family: 'Monoton', cursive; */
+  width: 100%;
+}
+
+h1{
+  font-size: 3rem!important;
+}
+
+.container-fluid{
+  padding: 0;
+}
+
+.row{
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbar */
+.navlogo{
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-light .navbar-nav .nav-link{
+  color: #06a29a;
+}
+
+.navbar-light .navbar-nav .show>.nav-link {
+  color: #06a29a;
+}
+
+.dropdown-item{
+  color: #06a29a;
+} 
+
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #06a29a;
+  text-decoration: none;
+  background-color: #9cddea;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, 
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #06a29a;
+}
+
+.nav-item{
+  border-bottom: 3px solid transparent;
+}
+
+.nav-item:hover{
+  border-bottom: 3px solid #9cddea;
+}
+
+.navbar-toggler-icon:focus{
+  outline: transparent;
+}
+
+.navbar-toggler:focus{
+  outline: transparent;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: transparent;
+}
+
+.dropdown-menu {
+  border: transparent;
+}
+
+
+/* Header */
+/* Hero */
+/* .banner{
+  width: 100%;
+  height: 50rem; 
+  overflow: hidden;
+  position: absolute;
+  background-image: url(/images/banner01.jpg) no-repeat;
+  background-size: contain;
+}
+
+.banner01{
+  position: relative;
+  width: 150%;
+  width: 150vw;
+  height: 100%;
+  left: -30rem;
+  top: -4rem;
+  background-size: contain;
+} */
+.banner{
+  width: 100%;
+  height: 670px;
+  overflow: hidden;
+}
+.banner img{
+  width: 110%;
+  height: 125%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* 上面物件 */
+.hero_front{
+  position: relative;
+  top: -20rem;
+  left: 6rem;
+  width: 50%;
+}
+
+/* banner_title 對位↓↓↓ */
+.hero{
+  position: absolute;
+}
+/* 對位↑↑↑ */
+.banner_title{
+  font-family: 'Monoton', cursive; 
+  color: #06a29a; 
+  /* position: relative;
+  left: 2rem; */
+
+}
+
+/* Switch */
+.btn{
+  padding: 0;
+  margin-top: 2rem;
+  margin-left: -2rem;
+}
+
+.btn-toggle {
+  margin: 0 4rem;
+  padding: 0;
+  position: relative;
+  border: none;
+  height: 1.5rem;
+  width: 3rem;
+  border-radius: 1.5rem;
+  color: #6b7381;
+  background: #bdc1c8;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+.btn-toggle:focus,
+.btn-toggle.focus,
+.btn-toggle:focus.active,
+.btn-toggle.focus.active {
+  outline: none;
+}
+.btn-toggle:before,
+.btn-toggle:after {
+  line-height: 1.5rem;
+  width: 4rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 0;
+  transition: opacity 0.25s;
+}
+.btn-toggle:before,
+.btn-toggle:after {
+  color: red;
+}
+.btn-toggle,
+.btn-toggle.active {
+  background-color: #826C9E;
+}
+.btn-toggle.btn-switch {
+  margin: 0 5rem;
+  padding: 0;
+  position: relative;
+  border: none;
+  height: 2.5rem;
+  width: 5rem;
+  border-radius: 2.5rem;
+}
+.btn-toggle.btn-switch:focus,
+.btn-toggle.btn-switch.focus,
+.btn-toggle.btn-switch:focus.active,
+.btn-toggle.btn-switch.focus.active {
+  outline: none;
+}
+.btn-switch:before,
+.btn-toggle.btn-switch:after {
+  line-height: 2.5rem;
+  width: 5rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 0;
+  transition: opacity 0.25s;
+}
+.btn-switch:before {
+  content: 'CN';
+  left: -5rem;
+}
+.btn-switch:after {
+  content: 'EN';
+  right: -5rem;
+  opacity: 0.5;
+}
+.btn-switch > .handle {
+  position: absolute;
+  top: 0.3125rem;
+  left: 0.3125rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 1.875rem;
+  background: #B6D58D;
+  transition: left 0.25s;
+}
+.btn-switch.active {
+  transition: background-color 0.25s;
+}
+.btn-switch.active > .handle {
+  left: 2.8125rem;
+  transition: left 0.25s;
+}
+.btn-switch.active:before {
+  opacity: 0.5;
+}
+.btn-switch.active:after {
+  opacity: 1;
+}
+
+/* Section */
+/* about */
+/* about區域 對位↓↓↓ */
+.hero{
+  position: relative;
+}
+/* 對位↑↑↑ */
+.about{
+  position: absolute;
+  top: 730px;
+  border: 1px solid red;
+}
+
+
+/* Section */
+/* Picture Buttons */
+.box{
+    border: 1px solid red;
+    width: 960px;
+    height: 650px;
+}
+
+/* Footer */
+
+
+/* Mobile */
+@media(max-width: 1440px){
+  /* Header */
+  /* Hero */
+  /* .banner{
+    width: 100%;
+    height: 40rem;
   }
-  
-  
-  /* Section */
-  /* Picture Buttons */
-  .box{
-      border: 1px solid red;
-      width: 960px;
-      height: 650px;
+  .banner01{
+    height: auto;
+    background-size: contain;
+  } */
   }
-  /* Footer */
-  /* Switch */
-  .btn-toggle {
-      margin: 0 4rem;
-      padding: 0;
-      position: relative;
-      border: none;
-      height: 1.5rem;
-      width: 3rem;
-      border-radius: 1.5rem;
-      color: #6b7381;
-      background: #bdc1c8;
-      box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+
+/* Mobile */
+  @media(max-width: 960px){
+/* Navbar */
+    .justify-content-end {
+      -ms-flex-pack: end!important;
+      justify-content: flex-start!important;
     }
-    .btn-toggle:focus,
-    .btn-toggle.focus,
-    .btn-toggle:focus.active,
-    .btn-toggle.focus.active {
-      outline: none;
+
+/* banner 上面物件 */
+    .hero_front{
+      left: 3rem;
     }
-    .btn-toggle:before,
-    .btn-toggle:after {
-      line-height: 1.5rem;
-      width: 4rem;
-      text-align: center;
-      font-weight: 600;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      position: absolute;
-      bottom: 0;
-      transition: opacity 0.25s;
-    }
-    .btn-toggle:before,
-    .btn-toggle:after {
-      color: red;
-    }
-    .btn-toggle,
-    .btn-toggle.active {
-      background-color: #826C9E;
-    }
-    .btn-toggle.btn-switch {
-      margin: 0 5rem;
-      padding: 0;
-      position: relative;
-      border: none;
-      height: 2.5rem;
-      width: 5rem;
-      border-radius: 2.5rem;
-    }
-    .btn-toggle.btn-switch:focus,
-    .btn-toggle.btn-switch.focus,
-    .btn-toggle.btn-switch:focus.active,
-    .btn-toggle.btn-switch.focus.active {
-      outline: none;
-    }
-    .btn-switch:before,
-    .btn-toggle.btn-switch:after {
-      line-height: 2.5rem;
-      width: 5rem;
-      text-align: center;
-      font-weight: 600;
-      font-size: 1rem;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      position: absolute;
-      bottom: 0;
-      transition: opacity 0.25s;
-    }
-    .btn-switch:before {
-      content: 'CN';
-      left: -5rem;
-    }
-    .btn-switch:after {
-      content: 'EN';
-      right: -5rem;
-      opacity: 0.5;
-    }
-    .btn-switch > .handle {
-      position: absolute;
-      top: 0.3125rem;
-      left: 0.3125rem;
-      width: 1.875rem;
-      height: 1.875rem;
-      border-radius: 1.875rem;
-      background: #B6D58D;
-      transition: left 0.25s;
-    }
-    .btn-switch.active {
-      transition: background-color 0.25s;
-    }
-    .btn-switch.active > .handle {
-      left: 2.8125rem;
-      transition: left 0.25s;
-    }
-    .btn-switch.active:before {
-      opacity: 0.5;
-    }
-    .btn-switch.active:after {
-      opacity: 1;
-    }
+}
+  
