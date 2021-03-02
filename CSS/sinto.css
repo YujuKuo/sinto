@@ -488,20 +488,17 @@ div, a{
   .hero_front{
     left: 3rem;
   }
+/* Section */
+/* Hero  */
+.hero{
+  height: 650px;
+}
+
 
 /* Section */
 /* Mobile show  */
 /* 對位↓↓↓ */
-  /* .main{
-    position: relative;
-  } */
-  /* .about{
-    position: relative;
-  }
-  .mobile_show{
-    position: absolute;
-    top: 1600px;
-  } */
+
 /* 對位↑↑↑ */
   .m_pic{
     width: 100%;
@@ -569,12 +566,15 @@ div, a{
   width: 100%;
   position: relative;
 }
-
 .mobile_show{
   position: absolute;
 }
 /* .mobile_show區域 對位↑↑↑ */
 
+.about{
+  /* top: -200px; */
+  top: 0px;
+}
 
 .mobile_show{
   display: none;
