@@ -320,13 +320,6 @@ a:hover{
 }
 /* 了解更多按鈕↑↑↑ */
 
-
-/* Section */
-/* Mobile show */
-/* .m_area{
-  display:none;
-} */
-
 /* Section */
 /* Download Picture Buttons */
 /* pic_btns區域 對位↓↓↓ */
@@ -477,6 +470,13 @@ div, a{
 /* Footer */
 /* 992 */
 @media(max-width: 992px){
+  .computer{
+    display:none;
+  }
+
+  .mobile{
+    display: block;
+  }
 
 /* Navbar */
   .justify-content-end {
@@ -490,14 +490,111 @@ div, a{
   }
 
 /* Section */
+/* Mobile show  */
+/* 對位↓↓↓ */
+  /* .main{
+    position: relative;
+  } */
+  /* .about{
+    position: relative;
+  }
+  .mobile_show{
+    position: absolute;
+    top: 1600px;
+  } */
+/* 對位↑↑↑ */
+  .m_pic{
+    width: 100%;
+  }
+
+/* 綠色區域 */
+  .tag_area_g{
+    background-color: #06a29a;
+  }
+  .btn_tag_g{
+    width: 80%;
+    height: 85px;
+    border: solid 3px #00a29a;
+    background-color: #ffffff;
+    margin: 0 0 79px;
+    padding: 26px 20px 25px 29px;
+  }
+
+  .btn_tag_g p{
+    color:  #00a29a;
+    font-style: 1rem;
+    font-weight: bold;
+  }
+
+/* 橘色區域 */
+  .tag_area_o{
+    background-color: #ec7e2d;
+  }
+  .btn_tag_o{
+    width: 80%;
+    height: 85px;
+    border: solid 3px #ec7e2d;
+    background-color: #ffffff;
+    margin: 0 0 79px;
+    padding: 26px 20px 25px 29px;
+  }
+
+  .btn_tag_o p{
+    color:  #ec7e2d;
+    font-style: 1rem;
+    font-weight: bold;
+  }
+
+/* 藍色區域 */
+  .tag_area_b{
+    background-color: #066eb8;
+  }
+  .btn_tag_b{
+    width: 80%;
+    height: 85px;
+    border: solid 3px #066eb8;
+    background-color: #ffffff;
+    margin: 0 0 79px;
+    padding: 26px 20px 25px 29px;
+  }
+
+  .btn_tag_b p{
+    color:  #066eb8;
+    font-style: 1rem;
+    font-weight: bold;
+  }
+
+/* .mobile_show區域 對位↓↓↓ */
+.m_about{
+  width: 100%;
+  position: relative;
+}
+
+.mobile_show{
+  position: absolute;
+}
+/* .mobile_show區域 對位↑↑↑ */
+
+
+.mobile_show{
+  display: none;
+}
+
+.m_pic_btns{
+  display:none;
+}
+
+
+
+/* Section */
 /* Footer */
 /* Footer區域 對位↓↓↓ */
   .footer{
     position: absolute;
-    top: 2920px;
+    top: 3260px;
     width: 100%;
 
-    /* display:none; */
+    display:none;
   }
 /* Footer區域 對位↑↑↑ */
 }
@@ -511,6 +608,9 @@ div, a{
   .mobile{
     display: block;
   }
+
+
+
   /* Section */
   /* Footer */
   /* 圖片按鈕 ↓↓↓ */
