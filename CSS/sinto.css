@@ -6,6 +6,10 @@ html{
   width: 100%;
 }
 
+.mobile{
+  display: none;
+}
+
 h1{
   font-size: 3rem!important;
 }
@@ -316,6 +320,13 @@ a:hover{
 }
 /* 了解更多按鈕↑↑↑ */
 
+
+/* Section */
+/* Mobile show */
+/* .m_area{
+  display:none;
+} */
+
 /* Section */
 /* Download Picture Buttons */
 /* pic_btns區域 對位↓↓↓ */
@@ -366,16 +377,9 @@ a:hover{
   text-decoration: none;
 }
 
-.box:first-child:hover{
+.box:hover{
   background-color: #826ca0ab;
   background-blend-mode: multiply;
-  /* background: url(/images/pic01.jpg); */
-  background-size: cover;
-  /* transform: scale(1.2); */
-}
-
-.box:last-child{
-  background: url(/images/pic02.jpg);
   background-size: cover;
 }
 
@@ -387,7 +391,6 @@ a:hover{
 }
 
 .tagbox img{
-  /* vertical-align: bottom; */
   width: 100%;
   padding: 0px;
 } 
@@ -400,19 +403,70 @@ a:hover{
 
 .box_text{
   display: none;
-  /* display: block; */
   margin: auto 0 auto 0px;
   font-size: 2rem;
   color: #ffffff;
   transition-duration: .5s;
-  
 }
 
-.box:hover .box_text{
+.box:hover .box_text {
   display: block;
 }
 
+/* Section */
+/* Footer */
+/* Footer區域 對位↓↓↓ */
+.main{
+  position: relative;
+  box-sizing: border-box;
+}
 
+.footer{
+  position: absolute;
+  top: 2260px;
+  width: 100%;
+  height: 80px;
+}
+/* Footer區域 對位↑↑↑ */
+
+.footer{
+  background-color: #00a29a;
+}
+
+.btn_fb{ 
+  width: 85px;
+  height: 40px;
+  /* margin-top: 20px;
+  margin-bottom: 20px; */
+  padding: 10px 35px;
+  border: solid 3px #826c9e;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 50px;
+  margin-right: 80px;
+  transition-duration: .5s;
+}
+
+.btn_fbp{
+  color: #826c9e;
+  margin-bottom: 0;
+  transition-duration: .5s;
+}
+
+.btn_fb:hover .btn_fbp{
+  color:#ffffff;
+}
+
+.btn_fb:hover{
+  background-color:#826c9e;
+}
+
+h6{
+  margin: 30px auto 30px 80px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+}
 
 div, a{
   border: 1px solid red;
@@ -421,21 +475,9 @@ div, a{
 
 
 /* Footer */
-
-
-/* 1440 */
-@media(max-width: 1440px){
-  /* Section */
-  /* Download Picture Buttons */
-  /* 圖片按鈕 ↓↓↓ */
-  .box{
-    height: 450px;
-  }
-  /* 圖片按鈕 ↑↑↑ */
-}
-
 /* 992 */
 @media(max-width: 992px){
+
 /* Navbar */
   .justify-content-end {
     -ms-flex-pack: end!important;
@@ -448,22 +490,37 @@ div, a{
   }
 
 /* Section */
-/* Download Picture Buttons */
-/* 圖片按鈕 ↓↓↓ */
-  .box{
-    height: 350px;
+/* Footer */
+/* Footer區域 對位↓↓↓ */
+  .footer{
+    position: absolute;
+    top: 2920px;
+    width: 100%;
+
+    /* display:none; */
   }
-/* 圖片按鈕 ↑↑↑ */
+/* Footer區域 對位↑↑↑ */
 }
 
 /* 576 */
 @media(max-width: 576px){
+  .computer{
+    display: none;
+  }
+
+  .mobile{
+    display: block;
+  }
   /* Section */
-  /* Download Picture Buttons */
+  /* Footer */
   /* 圖片按鈕 ↓↓↓ */
-    .box{
-      height: 250px;
-    }
+  .btn_fb{ 
+    margin-right: 20px;
+  }
+
+  h6{
+    margin: 30px auto 30px 20px;
+  }
   /* 圖片按鈕 ↑↑↑ */
   }
   
