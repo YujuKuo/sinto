@@ -429,8 +429,6 @@ a:hover{
 .btn_fb{ 
   width: 85px;
   height: 40px;
-  /* margin-top: 20px;
-  margin-bottom: 20px; */
   padding: 10px 35px;
   border: solid 3px #826c9e;
   background-color: #ffffff;
@@ -478,6 +476,7 @@ div, a{
     display: block;
   }
 
+  
 /* Navbar */
   .justify-content-end {
     -ms-flex-pack: end!important;
@@ -494,12 +493,8 @@ div, a{
   height: 650px;
 }
 
-
 /* Section */
 /* Mobile show  */
-/* 對位↓↓↓ */
-
-/* 對位↑↑↑ */
   .m_pic{
     width: 100%;
   }
@@ -557,48 +552,125 @@ div, a{
 
   .btn_tag_b p{
     color:  #066eb8;
-    font-style: 1rem;
+    font-size: 1rem;
     font-weight: bold;
   }
 
 /* .mobile_show區域 對位↓↓↓ */
 .m_about{
-  width: 100%;
   position: relative;
+  height: 800px;
 }
 .mobile_show{
   position: absolute;
+  /* top: 1500px; */
 }
 /* .mobile_show區域 對位↑↑↑ */
 
 .about{
-  /* top: -200px; */
   top: 0px;
 }
 
-.mobile_show{
-  display: none;
+/* Section */
+/* Download Picture Buttons  */
+/* .mobile_show區域 對位↓↓↓ */
+.m_show{
+  position: relative;
 }
 
 .m_pic_btns{
-  display:none;
+  position: absolute;
+  /* top: 450vh; */
+}
+/* .mobile_show區域 對位↑↑↑ */
+/* 圖片按鈕 ↓↓↓ */
+.m_box{
+  border: 2px solid #ffffff;
+  height: 650px;
+}
+
+.m_box:first-child{
+  background: url(/images/pic01.jpg);
+  background-size: cover;
+}
+
+.m_box:last-child{
+  background: url(/images/pic02.jpg);
+  background-size: cover;
+}
+/* 圖片按鈕 ↑↑↑ */
+
+/* 圖片按鈕hover ↓↓↓ */
+.m_box{
+  border: 2px solid #ffffff;
+  width: 100%;
+  height: 650px;
+  transition-duration: .5s;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.m_box:hover{
+  background-color: #826ca0ab;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+/* 圖片按鈕hover ↑↑↑ */
+
+.m_tagbox{
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.m_tagbox img{
+  width: 100%;
+  padding: 0px;
+} 
+
+.m_text_box{
+  width: 100%;
+  height: 650px;
+  color:#333333;
+}
+
+.m_box_text{
+  display: none;
+  margin: auto 0 auto 0px;
+  font-size: 2rem;
+  color: #ffffff;
+  transition-duration: .5s;
+}
+
+.m_box:hover .box_text {
+  display: block;
 }
 
 
-
-/* Section */
-/* Footer */
 /* Footer區域 對位↓↓↓ */
-  .footer{
-    position: absolute;
-    top: 3260px;
-    width: 100%;
-
-    display:none;
-  }
-/* Footer區域 對位↑↑↑ */
+.m_pic_btns{
+  position: relative;
 }
 
+.m_footer{
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  background-color: #00a29a;
+}
+/* Footer區域 對位↑↑↑ */
+
+.m_main{
+  width: 100%;
+}
+
+.m_main{
+  /* display:none; */
+}
+}
+
+
+/* */
 /* 576 */
 @media(max-width: 576px){
   .computer{
@@ -609,8 +681,21 @@ div, a{
     display: block;
   }
 
+  .hero_front{
+    left: 1rem;
+  }
 
+  .btn_more{
+    width: 250px;
+  }
 
+  .btn_p{
+    margin: 24px 0px;
+  }
+
+  .m_box{
+    height: 250px;
+  }
   /* Section */
   /* Footer */
   /* 圖片按鈕 ↓↓↓ */
@@ -622,5 +707,7 @@ div, a{
     margin: 30px auto 30px 20px;
   }
   /* 圖片按鈕 ↑↑↑ */
+
+
   }
   
