@@ -126,11 +126,50 @@ a:hover{
 
 .modal-header{
   padding: 2rem;
-  border-bottom: 2px solid #00a29a;
+  border-bottom: 2px solid #06a29a;
 }
 
 .modal-body{
   padding: 2rem;
+}
+
+.btn-success{
+  background-color:#06a29a;
+  border-color:#06a29a;
+  transition-duration: .3s;
+}
+
+.btn-success:hover{
+  border: 2px solid #ffffff;
+  background-color:#038a83;
+  box-shadow: 0 0.5em 0.5em -0.4em;
+  transform: translateY(-0.25em);
+}
+
+.btn-warning{
+  background-color:#ec7e25;
+  border-color:#ec7e25;
+  transition-duration: .3s;
+}
+
+.btn-warning:hover{
+  border: 2px solid #ffffff;
+  background-color:#cc6e20;
+  box-shadow: 0 0.5em 0.5em -0.4em;
+  transform: translateY(-0.25em);
+}
+
+.btn-primary{
+  background-color:#066eb8;
+  border-color: #066eb8;
+  transition-duration: .3s;
+}
+
+.btn-primary:hover{
+  border: 2px solid #ffffff;
+  background-color:#0460a1;
+  box-shadow: 0 0.5em 0.5em -0.4em;
+  transform: translateY(-0.25em);
 }
 
 .modal_01, 
@@ -185,13 +224,13 @@ a:hover{
 .modal_05{
   position: absolute;
   top: 430px;
-  left: 61vw;
+  left: 59vw;
 }
 
 .modal_06{
   position: absolute;
   top: 490px;
-  left: 60vw;
+  left: 58vw;
 }
 
 .modal_07{
@@ -416,6 +455,7 @@ a:hover{
 
 .btn_more:hover{
   background-color: #016eb6;
+  box-shadow: inset 0 0 0.3em 0 ;
 }
 
 .btn_more:hover .btn_p{

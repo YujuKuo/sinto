@@ -24,6 +24,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
+    <!-- Shortcut -->
+    <link rel="shortcut icon" href="/images/logo.svg" type="image/x-icon" />
+
 
 </head>
 <body>
@@ -381,7 +384,7 @@
     <!-- Download Picture Buttons -->  
         
         <div class="pic_btns row">
-            <a class="box col-lg-6 col-md-12 p-0 d-flex align-items-end" href="#" role="button" >
+            <a class="box col-lg-6 col-md-12 p-0 d-flex align-items-end" href="/file/RTO-file.pdf" download role="button" >
                 <div class="tagbox col-4">
                     <img src="/images/tag.svg" alt="">
                 </div>  
@@ -389,7 +392,7 @@
             </a>
             </a>
             
-            <a class="box col-lg-6 col-md-12 p-0 d-flex align-items-end" href="#" role="button" >
+            <a class="box col-lg-6 col-md-12 p-0 d-flex align-items-end" href="/file/VOC-file.pdf" download role="button" >
                 <div class="tagbox col-4" >
                     <img src="/images/tag.svg" alt="">
                 </div>
@@ -622,7 +625,7 @@
             </div>
             </div>
         </div>
-
+        
         <div class="modal fade" id="exampleModal_03" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel_03" aria-hidden="true">
             <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -775,7 +778,7 @@
     <!-- Section -->
     <!-- Download Picture Buttons --> 
         <div class="m_pic_btns row col-12">
-            <a class="m_box col-md-12 p-0 d-flex align-items-end" href="#" role="button" >
+            <a class="m_box col-md-12 p-0 d-flex align-items-end" href="/file/RTO-file.pdf" download role="button" >
                 <div class="m_tagbox col-4">
                     <img src="/images/tag.svg" alt="">
                 </div>  
@@ -783,7 +786,7 @@
             </a>
             </a>
             
-            <a class="m_box col-md-12 p-0 d-flex align-items-end" href="#" role="button" >
+            <a class="m_box col-md-12 p-0 d-flex align-items-end" href="/file/VOC-file.pdf" download role="button" >
                 <div class="m_tagbox col-4" >
                     <img src="/images/tag.svg" alt="">
                 </div>
@@ -818,6 +821,65 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <script>
+        // check animate
+        function shine(){
+        // 一開始設定值
+        $('.modal_01').css('background-color','#06a29a').css('border-color','#06a29a'); 
+        // 第一次閃 
+        setTimeout(" $('.modal_01').css('background-color','#038a83').css('border','2px solid #ffffff').css('transition-duration','.7s')",400); 
+        // 第二次閃
+        setTimeout( "$('.modal_01').css('background-color','#038a83').css('border-color','#06a29a').css('transition-duration','.7s')",800);
+        // others
+        $('.modal_02').css('background-color','#06a29a').css('border-color','#06a29a'); 
+        setTimeout(" $('.modal_02').css('background-color','#038a83').css('border','2px solid #ffffff').css('transition-duration','.7s')",400); 
+        setTimeout( "$('.modal_02').css('background-color','#038a83').css('border-color','#06a29a').css('transition-duration','.7s')",800);
+
+        $('.modal_03').css('background-color','#06a29a').css('border-color','#06a29a'); 
+        setTimeout(" $('.modal_03').css('background-color','#038a83').css('border','2px solid #ffffff').css('transition-duration','.7s')",400); 
+        setTimeout( "$('.modal_03').css('background-color','#038a83').css('border-color','#06a29a').css('transition-duration','.7s')",800);
+
+        $('.modal_04').css('background-color','#ec7e25').css('border-color','#ec7e25'); 
+        setTimeout(" $('.modal_04').css('background-color','#cc6e20').css('border','2px solid #ffffff').css('transition-duration','.7s')",400); 
+        setTimeout( "$('.modal_04').css('background-color','#ec7e25').css('border-color','#ec7e25').css('transition-duration','.7s')",800);
+
+        $('.modal_05').css('background-color','#ec7e25').css('border-color','#ec7e25'); 
+        setTimeout(" $('.modal_05').css('background-color','#cc6e20').css('border','2px solid #ffffff').css('transition-duration','.7s')",400); 
+        setTimeout( "$('.modal_05').css('background-color','#ec7e25').css('border-color','#ec7e25').css('transition-duration','.7s')",800);
+
+        $('.modal_06').css('background-color','#ec7e25').css('border-color','#ec7e25'); 
+        setTimeout(" $('.modal_06').css('background-color','#cc6e20').css('border','2px solid #ffffff').css('transition-duration','.7s')",400); 
+        setTimeout( "$('.modal_06').css('background-color','#ec7e25').css('border-color','#ec7e25').css('transition-duration','.7s')",800);
+
+        $('.modal_07').css('background-color','#066eb8').css('border-color','#066eb8'); 
+        setTimeout(" $('.modal_07').css('background-color','#0460a1').css('border','2px solid #ffffff').css('transition-duration','.7s')",400); 
+        setTimeout( "$('.modal_07').css('background-color','#066eb8').css('border-color','#066eb8').css('transition-duration','.7s')",800);
+
+        $('.modal_08').css('background-color','#066eb8').css('border-color','#066eb8'); 
+        setTimeout(" $('.modal_08').css('background-color','#0460a1').css('border','2px solid #ffffff').css('transition-duration','.7s')",400); 
+        setTimeout( "$('.modal_08').css('background-color','#066eb8').css('border-color','#066eb8').css('transition-duration','.7s')",800);
+
+        $('.modal_09').css('background-color','#066eb8').css('border-color','#066eb8'); 
+        setTimeout(" $('.modal_09').css('background-color','#0460a1').css('border','2px solid #ffffff').css('transition-duration','.7s')",400); 
+        setTimeout( "$('.modal_09').css('background-color','#066eb8').css('border-color','#066eb8').css('transition-duration','.7s')",800);
+        };
+        // 多久循環一次 
+        window.setInterval(shine, 800);
+
+
+        // 了解更多 hover
+        $('.btn_more').on('mouseover', function() {
+            $(this).css('border-radius','50px').css('transition-duration','.5s');
+        });
+        $('.btn_more').on('mouseleave', function() {
+            $(this).css('border-radius','3px').css('transition','.8s');
+        });
+
+        
+
+
+    </script>
     
 </body>
 </html>
