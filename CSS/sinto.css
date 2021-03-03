@@ -107,6 +107,113 @@ a:hover{
   object-position: center;
 }
 
+/* Modal↓↓↓*/
+.banner{
+  position: relative;
+}
+
+.close{
+  color: #826ca0;
+}
+
+.modal-content{
+  border: 8px solid #ec7e2d;
+}
+
+.modal-title{
+  color: #06a29a;
+}
+
+.modal-header{
+  padding: 2rem;
+  border-bottom: 2px solid #00a29a;
+}
+
+.modal-body{
+  padding: 2rem;
+}
+
+.modal_01, 
+.modal_02,
+.modal_03,
+.modal_04,
+.modal_05,
+.modal_06,
+.modal_07,
+.modal_08,
+.modal_09{
+  border-radius: 50px;
+}
+
+.modal_01 p, 
+.modal_02 p,
+.modal_03 p,
+.modal_04 p,
+.modal_05 p,
+.modal_06 p,
+.modal_07 p,
+.modal_08 p,
+.modal_09 p{
+  color: #ffffff;
+  margin: 0 1vw;
+}
+
+.modal_01{
+  position: absolute;
+  top: 120px;
+  left: 48vw;
+}
+
+.modal_02{
+  position: absolute;
+  top: 170px;
+  left: 42vw;
+}
+
+.modal_03{
+  position: absolute;
+  top: 260px;
+  left: 38vw;
+}
+
+.modal_04{
+  position: absolute;
+  top: 320px;
+  left: 56vw;
+}
+
+.modal_05{
+  position: absolute;
+  top: 430px;
+  left: 61vw;
+}
+
+.modal_06{
+  position: absolute;
+  top: 490px;
+  left: 60vw;
+}
+
+.modal_07{
+  position: absolute;
+  top: 390px;
+  left: 84vw;
+}
+
+.modal_08{
+  position: absolute;
+  top: 290px;
+  left: 76vw;
+}
+
+.modal_09{
+  position: absolute;
+  top: 465px;
+  left: 76vw;
+}
+
+/* Modal↑↑↑ */
+
 /* 上面物件 */
 .hero_front{
   position: relative;
@@ -236,6 +343,7 @@ a:hover{
   opacity: 1;
 }
 /* Switch按鈕↑↑↑ */
+
 
 /* Section */
 /* about */
@@ -459,12 +567,6 @@ h6{
   color: #ffffff;
 }
 
-div, a{
-  border: 1px solid red;
-}
-
-
-
 /* Footer */
 /* 992 */
 @media(max-width: 992px){
@@ -604,10 +706,13 @@ div, a{
 .m_box{
   border: 2px solid #ffffff;
   width: 100%;
-  height: 650px;
+  height: 250px;
   transition-duration: .5s;
   overflow: hidden;
   text-decoration: none;
+  background-color: #826ca0ab;
+  background-blend-mode: multiply;
+  background-size: cover;
 }
 
 .m_box:hover{
@@ -635,16 +740,16 @@ div, a{
 }
 
 .m_box_text{
-  display: none;
+  /* display: none; */
   margin: auto 0 auto 0px;
   font-size: 2rem;
   color: #ffffff;
   transition-duration: .5s;
 }
 
-.m_box:hover .box_text {
+/* .m_box:hover .box_text {
   display: block;
-}
+} */
 
 
 /* Footer區域 對位↓↓↓ */
@@ -664,9 +769,6 @@ div, a{
   width: 100%;
 }
 
-.m_main{
-  /* display:none; */
-}
 }
 
 
@@ -692,8 +794,8 @@ div, a{
   .btn_p{
     margin: 24px 0px;
   }
-
-  .m_box{
+  
+  .box{
     height: 250px;
   }
   /* Section */
