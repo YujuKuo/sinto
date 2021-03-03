@@ -208,7 +208,7 @@ a:hover{
 
 .modal_09{
   position: absolute;
-  top: 465px;
+  top: 460px;
   left: 76vw;
 }
 
@@ -746,11 +746,6 @@ h6{
   color: #ffffff;
   transition-duration: .5s;
 }
-
-/* .m_box:hover .box_text {
-  display: block;
-} */
-
 
 /* Footer區域 對位↓↓↓ */
 .m_pic_btns{
