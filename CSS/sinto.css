@@ -508,12 +508,12 @@ a:hover{
 }
 
 .box:first-child{
-  background: url(/images/pic01.jpg);
+  background: url(images/pic01.jpg);
   background-size: cover;
 }
 
 .box:last-child{
-  background: url(/images/pic02.jpg);
+  background: url(images/pic02.jpg);
   background-size: cover;
 }
 /* 圖片按鈕 ↑↑↑ */
@@ -760,12 +760,12 @@ h6{
 }
 
 .m_box:first-child{
-  background: url(/images/pic01.jpg);
+  background: url(images/pic01.jpg);
   background-size: cover;
 }
 
 .m_box:last-child{
-  background: url(/images/pic02.jpg);
+  background: url(images/pic02.jpg);
   background-size: cover;
 }
 /* 圖片按鈕 ↑↑↑ */
