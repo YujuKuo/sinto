@@ -405,7 +405,7 @@ a:hover{
   width: 100%;
   /* height: 780px; */
   height: 1050px;
-  background: url(/images/banner03.jpg) center center;
+  background-image: url(/images/banner03.jpg) center center;
   background-attachment: fixed;
 }
 
@@ -598,6 +598,18 @@ a:hover{
   margin-right: 80px;
   transition-duration: .5s;
 }
+
+/* .btn_fb{ 
+  width: 40px;
+  height: 40px;
+  padding: 10px 10px;
+  border: solid 3px #826c9e;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 3px;
+  margin-right: 80px;
+  transition-duration: .5s;
+} */
 
 .btn_fbp{
   color: #826c9e;
