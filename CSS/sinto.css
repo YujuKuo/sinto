@@ -109,7 +109,11 @@ a:hover{
   overflow: hidden;
 }
 .banner img{
-  width: 110%;
+  /* width: 110%;
+  height: 125%;
+  object-fit: cover;
+  object-position: center; */
+  width: 100%;
   height: 125%;
   object-fit: cover;
   object-position: center;
@@ -207,56 +211,56 @@ a:hover{
 
 .modal_01{
   position: absolute;
-  top: 120px;
-  left: 48vw;
+  top: 140px;
+  left: 40vw;
 }
 
 .modal_02{
   position: absolute;
-  top: 170px;
-  left: 42vw;
+  top: 200px;
+  left: 33vw;
 }
 
 .modal_03{
   position: absolute;
-  top: 260px;
-  left: 38vw;
+  top: 310px;
+  left: 56vw;
 }
 
 .modal_04{
   position: absolute;
-  top: 320px;
-  left: 56vw;
+  top: 450px;
+  left: 52vw;
 }
 
 .modal_05{
   position: absolute;
-  top: 430px;
-  left: 59vw;
+  top: 540px;
+  left: 60vw;
 }
 
 .modal_06{
   position: absolute;
-  top: 490px;
-  left: 58vw;
+  top: 650px;
+  left: 50vw;
 }
 
 .modal_07{
   position: absolute;
-  top: 390px;
-  left: 84vw;
+  top: 330px;
+  left: 28vw;
 }
 
 .modal_08{
   position: absolute;
-  top: 290px;
-  left: 76vw;
+  top: 370px;
+  left: 74vw;
 }
 
 .modal_09{
   position: absolute;
-  top: 460px;
-  left: 76vw;
+  top: 570px;
+  left: 74vw;
 }
 
 /* Modal↑↑↑ */
@@ -264,7 +268,7 @@ a:hover{
 /* 上面物件 */
 .hero_front{
   position: relative;
-  top: -26rem;
+  top: -24rem;
   left: 6rem;
   width: 50%;
 }
@@ -663,7 +667,9 @@ h6{
 /* banner 上面物件 */
   .hero_front{
     left: 3rem;
+    top: -26rem;
   }
+
 /* Section */
 /* Hero  */
 .hero{
@@ -821,7 +827,7 @@ h6{
   /* display: none; */
   margin: auto 10rem auto 0px;
   font-size: 2rem;
-  color: #ffffff;
+  color: #333333;
   transition-duration: .5s;
   width: 100%;
   text-align: center;
