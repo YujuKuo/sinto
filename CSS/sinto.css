@@ -105,7 +105,8 @@ a:hover{
 } */
 .banner{
   width: 100%;
-  height: 820px;
+  /* height: 820px; */
+  height: 1000px;
   overflow: hidden;
 }
 .banner img{
@@ -117,6 +118,11 @@ a:hover{
   height: 125%;
   object-fit: cover;
   object-position: center;
+}
+
+.banner_logo{
+  width: 6rem;
+  margin-bottom: 40px;
 }
 
 /* Modal↓↓↓*/
@@ -211,56 +217,56 @@ a:hover{
 
 .modal_01{
   position: absolute;
-  top: 140px;
+  top: 180px;
   left: 40vw;
 }
 
 .modal_02{
   position: absolute;
-  top: 200px;
-  left: 33vw;
+  top: 250px;
+  left: 31vw;
 }
 
 .modal_03{
   position: absolute;
-  top: 320px;
+  top: 380px;
   left: 54vw;
 }
 
 .modal_04{
   position: absolute;
-  top: 450px;
-  left: 52vw;
+  top: 550px;
+  left: 55vw;
 }
 
 .modal_05{
   position: absolute;
-  top: 540px;
-  left: 61vw;
+  top: 650px;
+  left: 64vw;
 }
 
 .modal_06{
   position: absolute;
-  top: 650px;
-  left: 50vw;
+  top: 780px;
+  left: 53vw;
 }
 
 .modal_07{
   position: absolute;
-  top: 330px;
-  left: 28vw;
+  top: 420px;
+  left: 25vw;
 }
 
 .modal_08{
   position: absolute;
-  top: 370px;
+  top: 450px;
   left: 74vw;
 }
 
 .modal_09{
   position: absolute;
-  top: 570px;
-  left: 74vw;
+  top: 700px;
+  left: 78vw;
 }
 
 /* Modal↑↑↑ */
@@ -268,7 +274,7 @@ a:hover{
 /* 上面物件 */
 .hero_front{
   position: relative;
-  top: -24rem;
+  top: -30rem;
   left: 6rem;
   width: 50%;
 }
@@ -293,7 +299,7 @@ a:hover{
 /* Switch按鈕 ↓↓↓ */
 .btn{
   padding: 0;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   margin-left: -2rem;
 }
 
@@ -367,11 +373,11 @@ a:hover{
 }
 .btn-switch:before {
   content: 'EN';
-  left: -5rem;
+  left: -4rem;
 }
 .btn-switch:after {
   content: 'CN';
-  right: -5rem;
+  right: -4rem;
   opacity: 0.5;
 }
 .btn-switch > .handle {
@@ -397,6 +403,7 @@ a:hover{
 .btn-switch.active:after {
   opacity: 1;
 }
+
 /* Switch按鈕↑↑↑ */
 
 
@@ -420,7 +427,8 @@ a:hover{
 .about_brand{
   width: 80px;
   height: auto;
-  margin: 3rem auto 1.5rem;
+  /* margin: 3rem auto 1.5rem; */
+  margin: 0 auto 1.5rem;
 }
 
 .about_brand img{
@@ -495,13 +503,15 @@ a:hover{
 .pic_btns{
   position: absolute;
   /* top: 1550px; */
-  top: 1850px;
+  /* top: 1850px; */
+  top: 2030px;
   width: 100%;
 }
 
 .about{
   position: absolute;
-  top: 780px;
+  /* top: 780px; */
+  top: 960px;
   width: 100%;
   /* height: 780px; */
   background: url(../images/banner03.jpg) center center;
@@ -509,7 +519,8 @@ a:hover{
 }
 .about{
   position: absolute;
-  top: 780px;
+  /* top: 780px; */
+  top: 960px;
   width: 100%;
   /* height: 780px; */
   /* height: 1050px; */
@@ -595,7 +606,8 @@ a:hover{
 
 .footer{
   position: absolute;
-  top: 2500px;
+  /* top: 2500px; */
+  top: 2680px;
   width: 100%;
   height: 80px;
 }
@@ -605,7 +617,7 @@ a:hover{
   background-color: #00a29a;
 }
 
-.btn_fb{ 
+/* .btn_fb{ 
   width: 85px;
   height: 40px;
   padding: 10px 35px;
@@ -615,7 +627,7 @@ a:hover{
   border-radius: 50px;
   margin-right: 80px;
   transition-duration: .5s;
-}
+} */
 
 /* .btn_fb{ 
   width: 40px;
@@ -629,7 +641,7 @@ a:hover{
   transition-duration: .5s;
 } */
 
-.btn_fbp{
+/* .btn_fbp{
   color: #826c9e;
   margin-bottom: 0;
   transition-duration: .5s;
@@ -641,6 +653,18 @@ a:hover{
 
 .btn_fb:hover{
   background-color:#826c9e;
+} */
+
+.icon_fb{ 
+  width: 50px;
+  height: 50px;
+  padding: 0 10px;
+  text-align: center;
+  margin-right: 60px;
+}
+
+.icon_fb img{
+  width: 100%;
 }
 
 h6{
@@ -668,11 +692,24 @@ h6{
     justify-content: flex-start!important;
   }
 
+.banner img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    object-position: 37% 50%;
+}
+
 /* banner 上面物件 */
+
   .hero_front{
     left: 3rem;
-    top: -26rem;
+    top: -45rem;
   }
+
+  .banner_logo {
+    width: 6rem;
+    margin-top: 30px;
+}
 
 /* Section */
 /* Hero  */
@@ -854,6 +891,17 @@ h6{
   width: 100%;
 }
 
+.icon_fb{ 
+  width: 50px;
+  height: 50px;
+  padding: 0 10px;
+  text-align: center;
+  margin-right: 0px;
+}
+
+.icon_fb img{
+  width: 100%;
+}
 }
 
 
