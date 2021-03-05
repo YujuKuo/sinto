@@ -11,7 +11,7 @@ html{
 }
 
 h1{
-  font-size: 3rem!important;
+  font-size: 4rem!important;
 }
 
 h2{
@@ -223,8 +223,8 @@ a:hover{
 
 .modal_03{
   position: absolute;
-  top: 310px;
-  left: 56vw;
+  top: 320px;
+  left: 54vw;
 }
 
 .modal_04{
@@ -236,7 +236,7 @@ a:hover{
 .modal_05{
   position: absolute;
   top: 540px;
-  left: 60vw;
+  left: 61vw;
 }
 
 .modal_06{
@@ -279,8 +279,12 @@ a:hover{
 }
 /* 對位↑↑↑ */
 .banner_title{
-  font-family: 'Monoton', cursive; 
-  color: #06a29a; 
+  /* font-family: 'Monoton', cursive;  */
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 900;
+  font-size: 12rem;
+  /* color: #06a29a;  */
+  color: #6cb5c2; 
   /* position: relative;
   left: 2rem; */
 
