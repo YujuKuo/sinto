@@ -242,6 +242,7 @@ a:hover{
 .modal_05{
   position: absolute;
   top: 650px;
+  /* left:64vw; */
   left: 69vw;
 }
 
